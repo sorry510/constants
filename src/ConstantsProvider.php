@@ -53,7 +53,7 @@ class ConstantsProvider extends ServiceProvider
                 if ($fileInfo->isDot() || $fileInfo->isDir() || $fileInfo->getExtension() !== 'php') {
                     continue;
                 }
-                $reflClass = new \ReflectionClass('\App\Constants' . $fileInfo->getBasename('.php'));
+                $reflClass = new \ReflectionClass("\\App\\Constants\\" . $fileInfo->getBasename('.php'));
                 $reflectionConstants = $reflClass->getReflectionConstants(); // 获取反射类的所有常量，没有返回空数组
                 foreach ($reflectionConstants as $reflectionConstant) {
                     $doc = $reflectionConstant->getDocComment();
