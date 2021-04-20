@@ -1,7 +1,7 @@
 {
     "name": "sorry510/constant",
     "description": "laravel constant",
-    "keywords": ["laravel", "constant"],
+    "keywords": ["laravel", "const"],
     "license": "MIT",
     "authors": [
         {
