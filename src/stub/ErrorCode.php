@@ -30,4 +30,9 @@ class ErrorCode
      * @Message("没有权限")
      */
     const NO_AUTH = 403;
+
+    /**
+     * @Message("数据不存在")
+     */
+    const DATA_NO_EXIST = 1001;
 }
